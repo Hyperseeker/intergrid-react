@@ -1,5 +1,5 @@
 import { MouseEvent } from "react";
-import { Node } from "../interfaces";
+import { type Node as IntergridNode } from "../interfaces";
 
 type RectTestResult = {
 	range: Range | null;
@@ -104,7 +104,7 @@ export function placeCaretToPoint(event: MouseEvent) {
 	selection.collapse(anchor, offset);
 }
 
-export function findInNestedArray(node: Node, conditionFn = noop) {
+export function findInNestedArray(node: IntergridNode, conditionFn = noop) {
 	const stack = [node];
 
 	if (stack.length === 0) return;
