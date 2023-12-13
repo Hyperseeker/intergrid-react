@@ -12,14 +12,22 @@ const Cell = styled.div`
 
 	color: white;
 
+	cursor: pointer;
+
+	user-select: none;
+
 	& + & {
 		border-inline-start: 1px solid #202020;
+	}
+
+	&:last-child {
+		flex: 1 0 auto;
 	}
 `;
 
 const Action = styled.span`
 	height: 0.9em;
-	
+
 	font-size: 0.9em;
 `;
 
