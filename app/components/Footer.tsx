@@ -13,6 +13,8 @@ const Footer = styled.footer<{ $uiState?: string }>`
 	border-top: 1px solid #202020;
 
 	color: white;
+
+	z-index: 1;
 `;
 
 export function FooterComponent() {
