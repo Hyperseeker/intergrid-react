@@ -15,7 +15,7 @@ const Footer = styled.footer<{ $uiState?: string }>`
 	color: white;
 `;
 
-export default function FooterComponent() {
+export function FooterComponent() {
 	const { currentUIState } = useContext(UIStateContext);
 
 	return (

@@ -1,6 +1,6 @@
 "use client";
 import View from "@/app/components/View";
-import FooterComponent from "@/app/components/Footer";
+import { FooterComponent as Footer } from "@/app/components/Footer";
 import { useContext } from "react";
 import { BackdropComponent as Backdrop } from "./components/Backdrop";
 import { ViewContext } from "./contexts/ViewContext";
@@ -23,7 +23,7 @@ export default function ControllerComponent() {
 		<Controller>
 			<Backdrop />
 			<View columns={state.columns} />
-			<FooterComponent />
+			<Footer />
 		</Controller>
 	);
 }
