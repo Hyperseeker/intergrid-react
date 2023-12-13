@@ -20,9 +20,18 @@ export default function FooterComponent() {
 
 	return (
 		<Footer $uiState={currentUIState}>
-			<Cell action="New line" hotkey="Enter" />
-			<Cell action="Edit" hotkey="F2" />
-			<Cell action="Delete" hotkey="Del" />
+			<Cell action="New line" hotkeys="Enter" />
+			<Cell action="Edit" hotkeys={["F2", "Ctrl+Enter"]} />
+			<Cell action="Delete" hotkeys="Del" />
+			<Cell action="Indent" hotkeys="Tab" />
+			<Cell action="Outdent" hotkeys="Shift+Tab" />
+			<Cell action="Move up" hotkeys="Ctrl+Shift+Up" />
+			<Cell action="Move down" hotkeys="Ctrl+Shift+Down" />
+			<Cell action="Expand" hotkeys="Ctrl+Down" />
+			<Cell action="Collapse" hotkeys="Ctrl+Up" />
+			<Cell action="Open in column to left" hotkeys="Ctrl+L" />
+			<Cell action="Open in column to right" hotkeys="Ctrl+R" />
+			<Cell action="Filter" hotkeys="Ctrl+F" />
 		</Footer>
 	);
 }
