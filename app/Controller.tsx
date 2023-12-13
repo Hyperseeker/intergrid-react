@@ -16,13 +16,15 @@ const Controller = styled.main`
 	overflow-x: hidden;
 `;
 
-export default function ControllerComponent() {
-	const { state } = useContext(ViewContext);
+export function ControllerComponent() {
+	const {
+		state: { columns },
+	} = useContext(ViewContext);
 
 	return (
 		<Controller>
 			<Backdrop />
-			<View columns={state.columns} />
+			<View columns={columns} />
 			<Footer />
 		</Controller>
 	);
