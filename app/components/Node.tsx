@@ -155,7 +155,6 @@ export default function Node({
 
 	useHotkeys(["F2", "Ctrl+Enter"], () => {
 		setUIState("edit");
-		console.log(currentUIState);
 		if (contentElement.current) {
 			placeCaretToEnd(contentElement.current);
 		}
