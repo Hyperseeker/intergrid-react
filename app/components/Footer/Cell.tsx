@@ -23,24 +23,40 @@ const Action = styled.span`
 	font-size: 0.9em;
 `;
 
-const Hotkey = styled.kbd`
+const Hotkeys = styled.div`
 	height: 0.9em;
 
 	font-size: 1.125em;
 	color: #fe4118;
 `;
 
+const Hotkey = styled.kbd``;
+
 export const CellComponent = ({
 	action,
-	hotkey,
+	hotkeys,
 }: {
 	action: string;
-	hotkey: string;
+	hotkeys: string | string[];
 }) => {
 	return (
 		<Cell>
 			<Action>{action}</Action>
-			<Hotkey>{hotkey}</Hotkey>
+			<Hotkeys>
+				{Array.isArray(hotkeys) ? (
+					<>
+						{hotkeys.map((hotkey, index, array) =>
+							index === array.length - 1 ? (
+								<Hotkey key={hotkey}>{hotkey}</Hotkey>
+							) : (
+								<Hotkey key={hotkey}>{`${hotkey} or `}</Hotkey>
+							)
+						)}
+					</>
+				) : (
+					<Hotkey>{hotkeys}</Hotkey>
+				)}
+			</Hotkeys>
 		</Cell>
 	);
 };
