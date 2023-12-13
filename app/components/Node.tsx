@@ -171,7 +171,7 @@ export default function Node({
 
 	const toggleOpen = useCallback(() => setIsOpen(!isOpen), [isOpen]);
 
-	const handleClick: MouseEventHandler<HTMLSpanElement> = useCallback(
+	const handleClick: MouseEventHandler<HTMLDivElement> = useCallback(
 		(event) => {
 			if (isSelected) {
 				setUIState("edit");
