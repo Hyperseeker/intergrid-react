@@ -153,7 +153,7 @@ export default function Node({
 		}
 	}, [currentUIState, isSelected]);
 
-	useHotkeys("F2", () => {
+	useHotkeys(["F2", "Ctrl+Enter"], () => {
 		setUIState("edit");
 		console.log(currentUIState);
 		if (contentElement.current) {
