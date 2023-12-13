@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Intergrid
 
-## Getting Started
+Intergrid is a limited recreation of [Indigrid](https://innovationdilation.com/) in React. Like its parent image, Intergrid is a text-only, keyboard-oriented tool for note-taking and outlining. It does not support images, tables, links (including internal links), embeds, or anything beyond mere text. (Worth noting that the original has a hidden feature where `#hashtags` are highlit in plain text.)
 
-First, run the development server:
+This simplicity makes Indigrid (and, by extension, Intergrid) easy to operate.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Why?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I wanted to practice my React skills on a personal project with no deadlines or clients eagerly awaiting results.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Goals
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The primary goal of Intergrid is a faithful-but-limited implementation of Indigrid. Most of the features in the latest version of Indigrid (33) are intended to be added eventually.
 
-## Learn More
+Things are are outside of the scope of this app:
 
-To learn more about Next.js, take a look at the following resources:
+-   bookmarks
+-   to-do functionality
+-   replicating data structure precisely
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You can fork this project and implement it as you see fit, within the requirements of the license supplied with this repo.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+MIT
